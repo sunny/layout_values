@@ -67,6 +67,12 @@ Add this line to your Gemfile:
 gem "layout_values", github: "sunny/layout_values"
 ```
 
+Install it:
+
+```sh
+$ bundle
+```
+
 Then in `app/helpers/application_helper.rb`, add:
 
 ```rb
