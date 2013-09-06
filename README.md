@@ -2,11 +2,6 @@
 
 Rails plugin to add helpers to indicate page titles and meta description.
 
-Requirements
-------------
-
-Rails 4, Ruby 2.
-
 Usage
 -----
 
@@ -57,13 +52,19 @@ fr:
       meta_description: "Éditer mon compte"
 ```
 
+
+Requirements
+------------
+
+Rails 4, Ruby 2.
+
 Install
 -------
 
 Add this line to your Gemfile:
 
 ```rb
-gem "layout_values"
+gem "layout_values", github: "sunny/layout_values"
 ```
 
 Then in `app/helpers/application_helper.rb`, add:
