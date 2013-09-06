@@ -1,6 +1,11 @@
 # LayoutValues
 
-Module to add helpers to indicate page titles and meta description.
+Rails plugin to add helpers to indicate page titles and meta description.
+
+Requirements
+------------
+
+Rails 4, Ruby 2.
 
 Usage
 -----
