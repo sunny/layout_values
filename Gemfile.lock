@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     layout_values (0.0.1)
-      rails (~> 4.0.1)
+      rails (>= 4.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -43,7 +43,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
-    multi_json (1.8.2)
+    multi_json (1.8.4)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -61,7 +61,7 @@ GEM
       activesupport (= 4.0.2)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.1.0)
+    rake (10.1.1)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
