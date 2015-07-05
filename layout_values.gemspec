@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = LayoutValues::VERSION
   s.authors     = ["Sunny Ripert"]
   s.email       = ["sunny@sunfox.org"]
-  s.homepage    = "http://github.com/sunny"
+  s.homepage    = "https://github.com/sunny/layout_values"
   s.summary     = "Add helpers to indicate page titles and meta description."
   s.description = ""
 
