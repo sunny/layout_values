@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    layout_values (0.0.2)
+    layout_values (0.1.0)
       rails (>= 4.1.11)
 
 GEM
