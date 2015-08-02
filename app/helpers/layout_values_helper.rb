@@ -13,25 +13,30 @@ module LayoutValuesHelper
     end
   end
 
-
   private
-  def layout_value(key)
-    # Read
-    if content_for?(key)
-      value = content_for(key)
-    else
-      value = t("#{controller.controller_name}.#{controller.action_name}.#{key}", default: "")
-    end
+
+  def layout_value(key, options = {})
+    options = {
+      default_value_key: "#{controller.controller_name}.#{controller.action_name}.#{key}",
+      decorator_key: "layout.#{key}.format",
+      default_decorator_key: "layout.#{key}.default",
+    }.merge(options)
+
+    # Read the value
+    value = if content_for?(key)
+              content_for(key)
+            else
+              t(options[:default_value_key], default: "")
+            end
 
     # Decorate
-    if value.present?
-      value = t("layout.#{key}.format", key.to_sym => value, default: value)
-    else
-      value = t("layout.#{key}.default", default: value)
-    end
+    value = if value.present?
+              t(options[:decorator_key], key.to_sym => value, default: value)
+            else
+              t(options[:default_decorator_key], default: value)
+            end
 
     # Translation helpers tend to add HTML
     strip_tags value
   end
-
 end
