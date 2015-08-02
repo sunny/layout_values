@@ -1,5 +1,7 @@
-module LayoutValuesHelper
+# for #present?
+require "active_support/core_ext/string"
 
+module LayoutValuesHelper
   %i(title meta_description meta_keywords).each do |method|
     define_method method do |value = nil|
       if value.present?
