@@ -61,10 +61,11 @@ Rails 4, Ruby 2.
 Install
 -------
 
-Add this line to your Gemfile:
+Add these lines to your Gemfile:
 
 ```rb
-gem "layout_values", github: "sunny/layout_values"
+# Helpers for page title and meta description.
+gem "layout_values"
 ```
 
 Install it:
