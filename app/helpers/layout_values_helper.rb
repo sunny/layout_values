@@ -37,6 +37,6 @@ module LayoutValuesHelper
             end
 
     # Translation helpers tend to add HTML
-    strip_tags value
+    sanitize value
   end
 end
